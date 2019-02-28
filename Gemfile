@@ -41,8 +41,16 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug'
+  gem 'capybara', '~> 3.14'
+  gem 'database_cleaner', '~> 1.7'
+  gem 'factory_bot_rails', '~> 5.0', '>= 5.0.1'
+  gem 'headless', '~> 2.3', '>= 2.3.1'
+  # gem 'poltergeist', '~> 1.18', '>= 1.18.1'
+  gem 'rails-controller-testing', '~> 1.0', '>= 1.0.4'
+  gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
 end
 
 group :development do
@@ -52,14 +60,4 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-end
-
-group :test do
-  gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
-  gem 'factory_bot_rails', '~> 5.0', '>= 5.0.1'
-  gem 'rails-controller-testing', '~> 1.0', '>= 1.0.4'
-  gem 'headless', '~> 2.3', '>= 2.3.1'
-  gem 'capybara', '~> 3.14'
-  gem 'poltergeist', '~> 1.18', '>= 1.18.1'
-  gem 'database_cleaner', '~> 1.7'
 end
