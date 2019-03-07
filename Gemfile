@@ -40,6 +40,8 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+
 group :development, :test do
   gem 'byebug'
   gem 'capybara', '~> 3.14'
